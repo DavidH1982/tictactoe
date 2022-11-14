@@ -1,38 +1,87 @@
 .App {
-  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.screenLeft,
+.screenRight {
+  box-sizing: border-box;
+  width: 25vw;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.screenRight {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.reset,
+.resetDeactive {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: darkgray;
+  margin: 0 auto;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.reset {
+  background-image: url(./Images/reload.svg);
+  background-size: 65%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.reset:hover,
+.square:hover {
+  cursor: pointer;
+}
+.resetDeactive:hover {
+  cursor: auto;
+}
+.screenMiddle {
+  box-sizing: border-box;
+  width: 50vw;
+  height: 90vh;
+  margin-top: 5vh;
+}
+.gameBoard {
+  box-sizing: border-box;
+  height: 100%;
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 1px solid black;
+}
+.square {
+  width: 33.33%;
+  height: 33.33%;
+  display: block;
+}
+.square:nth-child(2), 
+.square:nth-child(4), 
+.square:nth-child(6),
+.square:nth-child(8) {
+  background-color: lightgrey;
+}
+.squareSymbols {
+  height: 90%;
+  width: 90%;
+  margin: 5%;
+  color: black;
+  font-size: 150px;
+  line-height: 150px;
+  text-align: center;
+}
+.squareDeactive {
+  pointer-events: none;
+}
+.shownStatus {
+  display: inline;
+}
+.hiddenStatus {
+  display: none;
 }
