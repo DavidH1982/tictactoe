@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/DavidH1982/tictactoe/static/css/main.70edde25.css",
-    "main.js": "/DavidH1982/tictactoe/static/js/main.fd35c9df.js",
-    "static/js/787.35c5f2b0.chunk.js": "/DavidH1982/tictactoe/static/js/787.35c5f2b0.chunk.js",
-    "index.html": "/DavidH1982/tictactoe/index.html",
-    "static/media/reload.svg": "/DavidH1982/tictactoe/static/media/reload.6d456f7b91dcfcafe854.svg",
-    "main.70edde25.css.map": "/DavidH1982/tictactoe/static/css/main.70edde25.css.map",
-    "main.fd35c9df.js.map": "/DavidH1982/tictactoe/static/js/main.fd35c9df.js.map",
-    "787.35c5f2b0.chunk.js.map": "/DavidH1982/tictactoe/static/js/787.35c5f2b0.chunk.js.map"
+    "main.css": "/tictactoe/static/css/main.6925331c.css",
+    "main.js": "/tictactoe/static/js/main.278ea347.js",
+    "static/js/787.35c5f2b0.chunk.js": "/tictactoe/static/js/787.35c5f2b0.chunk.js",
+    "index.html": "/tictactoe/index.html",
+    "static/media/reload.svg": "/tictactoe/static/media/reload.6d456f7b91dcfcafe854.svg",
+    "main.6925331c.css.map": "/tictactoe/static/css/main.6925331c.css.map",
+    "main.278ea347.js.map": "/tictactoe/static/js/main.278ea347.js.map",
+    "787.35c5f2b0.chunk.js.map": "/tictactoe/static/js/787.35c5f2b0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.70edde25.css",
-    "static/js/main.fd35c9df.js"
+    "static/css/main.6925331c.css",
+    "static/js/main.278ea347.js"
   ]
 }
