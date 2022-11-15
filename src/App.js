@@ -179,6 +179,71 @@ function App() {
     document.getElementById("square9Symbol").innerHTML="";
   };
 
+  const sq123 = () => {
+    let sq1Highlight = document.getElementById("square1");
+    sq1Highlight.classList.add("highlight");
+    let sq2Highlight = document.getElementById("square2");
+    sq2Highlight.classList.add("highlight");
+    let sq3Highlight = document.getElementById("square3");
+    sq3Highlight.classList.add("highlight");
+  }
+  const sq147 = () => {
+    let sq1Highlight = document.getElementById("square1");
+    sq1Highlight.classList.add("highlight");
+    let sq4Highlight = document.getElementById("square4");
+    sq4Highlight.classList.add("highlight");
+    let sq7Highlight = document.getElementById("square7");
+    sq7Highlight.classList.add("highlight");
+  }
+  const sq159 = () => {
+    let sq1Highlight = document.getElementById("square1");
+    sq1Highlight.classList.add("highlight");
+    let sq5Highlight = document.getElementById("square5");
+    sq5Highlight.classList.add("highlight");
+    let sq9Highlight = document.getElementById("square9");
+    sq9Highlight.classList.add("highlight");
+  }
+  const sq258 = () => {
+    let sq2Highlight = document.getElementById("square2");
+    sq2Highlight.classList.add("highlight");
+    let sq5Highlight = document.getElementById("square5");
+    sq5Highlight.classList.add("highlight");
+    let sq8Highlight = document.getElementById("square8");
+    sq8Highlight.classList.add("highlight");
+  }
+  const sq357 = () => {
+    let sq3Highlight = document.getElementById("square3");
+    sq3Highlight.classList.add("highlight");
+    let sq5Highlight = document.getElementById("square5");
+    sq5Highlight.classList.add("highlight");
+    let sq7Highlight = document.getElementById("square7");
+    sq7Highlight.classList.add("highlight");
+  }
+  const sq369 = () => {
+    let sq3Highlight = document.getElementById("square3");
+    sq3Highlight.classList.add("highlight");
+    let sq6Highlight = document.getElementById("square6");
+    sq6Highlight.classList.add("highlight");
+    let sq9Highlight = document.getElementById("square9");
+    sq9Highlight.classList.add("highlight");
+  }
+  const sq456 = () => {
+    let sq4Highlight = document.getElementById("square4");
+    sq4Highlight.classList.add("highlight");
+    let sq5Highlight = document.getElementById("square5");
+    sq5Highlight.classList.add("highlight");
+    let sq6Highlight = document.getElementById("square6");
+    sq6Highlight.classList.add("highlight");
+  }
+  const sq789 = () => {
+    let sq7Highlight = document.getElementById("square7");
+    sq7Highlight.classList.add("highlight");
+    let sq8Highlight = document.getElementById("square8");
+    sq8Highlight.classList.add("highlight");
+    let sq9Highlight = document.getElementById("square9");
+    sq9Highlight.classList.add("highlight");
+  }
+
   const gameCheck = () => {
     if (
       square1Output === square2Output &&
@@ -186,84 +251,112 @@ function App() {
       square3Output === "X"
     ) {
       setPlayer1Wins(true);
+      sq123();
     } else if (
       square1Output === square4Output &&
       square4Output === square7Output &&
       square7Output === "X"
     ) {
       setPlayer1Wins(true);
+      sq147();
     } else if (
       square1Output === square5Output &&
       square5Output === square9Output &&
       square9Output === "X"
     ) {
       setPlayer1Wins(true);
+      sq159();
     } else if (
       square2Output === square5Output &&
       square5Output === square8Output &&
       square8Output === "X"
     ) {
       setPlayer1Wins(true);
+      sq258();
     } else if (
       square3Output === square6Output &&
       square6Output === square9Output &&
       square9Output === "X"
     ) {
       setPlayer1Wins(true);
+      sq369();
+    } else if (
+      square7Output === square8Output &&
+      square8Output === square9Output &&
+      square9Output === "X"
+    ) {
+      setPlayer1Wins(true);
+      sq789();
     } else if (
       square4Output === square5Output &&
       square5Output === square6Output &&
       square6Output === "X"
     ) {
       setPlayer1Wins(true);
+      sq456();
     } else if (
-      square7Output === square8Output &&
-      square8Output === square9Output &&
-      square9Output === "X"
+      square3Output === square5Output &&
+      square5Output === square7Output &&
+      square7Output === "X"
     ) {
       setPlayer1Wins(true);
+      sq357();
     } else if (
       square1Output === square2Output &&
       square2Output === square3Output &&
       square3Output === "O"
     ) {
       setPlayer2Wins(true);
+      sq123();
     } else if (
       square1Output === square4Output &&
       square4Output === square7Output &&
       square7Output === "O"
     ) {
       setPlayer2Wins(true);
+      sq147();
     } else if (
       square1Output === square5Output &&
       square5Output === square9Output &&
       square9Output === "O"
     ) {
       setPlayer2Wins(true);
+      sq159();
     } else if (
       square2Output === square5Output &&
       square5Output === square8Output &&
       square8Output === "O"
     ) {
       setPlayer2Wins(true);
+      sq258();
     } else if (
       square3Output === square6Output &&
       square6Output === square9Output &&
       square9Output === "O"
     ) {
       setPlayer2Wins(true);
+      sq369();
     } else if (
       square4Output === square5Output &&
       square5Output === square6Output &&
       square6Output === "O"
     ) {
       setPlayer2Wins(true);
+      sq456();
+    } else if (
+      square3Output === square5Output &&
+      square5Output === square7Output &&
+      square7Output === "O"
+    ) {
+      setPlayer2Wins(true);
+      sq357();
     } else if (
       square7Output === square8Output &&
       square8Output === square9Output &&
       square9Output === "O"
     ) {
       setPlayer2Wins(true);
+      sq789();
     } else if (
       square1Output && square2Output &&
       square3Output && square4Output &&
@@ -302,13 +395,13 @@ function App() {
             It is your turn, Player 2. You are O
           </p>
           <p className={player1Wins ? "shownStatus" : "hiddenStatus"}>
-            Game over. Player 1, you are the winner
+            Game over. <br/>Player 1, you are the winner
           </p>
           <p className={player2Wins ? "shownStatus" : "hiddenStatus"}>
-            Game over. Player 2, you are the winner
+            Game over. <br/>Player 2, you are the winner
           </p>
           <p className={gameTied ? "shownStatus" : "hiddenStatus"}>
-            Game over. You have tied. Press reset to try again.
+            Game over. <br/>You have tied. Press restart to try again.
           </p>
         </div>
       </div>
@@ -420,6 +513,9 @@ function App() {
           className={resetActive ? "reset" : "resetDeactive"}
           onClick={() => resetClick()}
         ></div>
+        <div className={resetActive ? "shownRestart restartText" : "hiddenRestart"}>
+          <p>Restart</p>
+        </div>
       </div>
     </div>
   );

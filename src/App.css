@@ -17,6 +17,15 @@
   flex-direction: column;
   justify-content: center;
 }
+.restartText {
+  text-align: center;
+}
+.shownRestart {
+  visibility: visible;
+}
+.hiddenRestart {
+  visibility: hidden;
+}
 .reset,
 .resetDeactive {
   height: 80px;
@@ -54,12 +63,13 @@
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 .square {
   width: 33.33%;
   height: 33.33%;
   display: block;
+  background-color: gray;
 }
 .square:nth-child(2), 
 .square:nth-child(4), 
@@ -84,4 +94,14 @@
 }
 .hiddenStatus {
   display: none;
+}
+.highlight {
+  background-color: lightcoral !important;
+}
+.screenLeft {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 36px;
 }
